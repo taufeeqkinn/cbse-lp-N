@@ -1,0 +1,68 @@
+    .Landing-MediaCompo_formcontrol__fxdty {
+    border: 1px solid #ea760b!important;
+    font-size: 14px!important;
+    font-family: Nunito,sans-serif;
+    border-radius: 10px!important;
+    margin-bottom: 1.5rem!important;
+    height: 48px!important;
+    color: #020202!important;
+    outline: none;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+.Landing-MediaCompo_formControlArea__BNbHM, .Landing-MediaCompo_formselect__9ASot {
+    border: 1px solid #ea760b!important;
+    font-size: 14px!important;
+    font-family: Nunito,sans-serif;
+    border-radius: 10px!important;
+    margin-bottom: 1.5rem!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+.Landing-MediaCompo_formcontrol__fxdty:read-only {
+    background: white;
+}
+.phareacode {
+    width: 40%!important;
+    margin-right: 13px;
+    padding:0;
+    text-align:center;
+}
+.Landing-MediaCompo_newsviewbtn__4PlhY {
+    background: #155b2e;
+    color: #fff;
+    margin-top: 5px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 9rem;
+}
+.Landing-MediaCompo_formControlArea__BNbHM {
+    height: 20px!important;
+    resize: none;
+    color: #020202!important;
+    outline: none;
+}
+.form-label{
+    text-align: left;
+}
+
+.form-cls{
+    background-color: rgb(241, 241, 241);
+    border-radius: 15px;
+    -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 15px 50px 3px rgba(0, 0, 0, 0.281)!important;
+}
+
+
+input#Landing-mobileNumber::-webkit-outer-spin-button,
+input#Landing-mobileNumber::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input#Landing-mobileNumber[type=number] {
+  -moz-appearance: textfield;
+}
+

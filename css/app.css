@@ -1,12 +1,45 @@
 /* start css variables */
+@font-face {
+    font-family: Peristiwa;
+    src: url('../webfonts/Peristiwa.otf');
+}
+@font-face {
+    font-family: DJ5FONT;
+    src: url('../webfonts/DJ5CAS_P.ttf');
+}
+@font-face {
+    font-family: Century;
+    src: url('../webfonts/Century Gothic.ttf');
+}
+
 
 :root{
     --primary-color: #3A827E;
     --secondary-color: #00A3FF;
     --least-color:#ED7445;
-    --font-family: 'Century Gothic Paneuropean', sans-serif;
+    --font-family: 'Source Sans 3', sans-serif;
 }
 /* end css variables */
+p{
+	font-family: "Source Sans 3", sans-serif;
+	font-optical-sizing: auto;
+	font-size: 18px;
+	font-weight: 18px;
+	font-style: normal;
+	line-height: 23px;
+	color: black;
+}
+
+h1{
+	font-family: "DJ5FONT";
+	color: #ED7445;
+}
+
+h2{
+	font-family: "Century";
+	font-size: 24px;
+	font-weight: 20px;
+}
 
 
 
@@ -430,7 +463,7 @@ dl {
     border: 3px solid var(--secondary-color); */
 	color: #ffffff !important;
     /* border: 2px solid #550404; */
-	background-color: #39a3ff;
+	background-color: #2c473e;
     border-radius: 15px;
     padding: .3rem 1rem;
 	width: 70%;
@@ -444,7 +477,7 @@ dl {
 	background-repeat: no-repeat;
 }
 .fixed-hero-slider-component{
-	height: 40.625rem;
+	height: 32.625rem;
 }
 
 .min-img-container {
@@ -519,7 +552,7 @@ dl {
 }
 
 .fixed-btn {
-    background-color: #C94040;
+    background-color: #065A4F;
     color: #fff!important;
     display: inline-block;
     padding: .8rem 3rem;
@@ -532,6 +565,10 @@ dl {
 	.menu-main {
 		display: flex;
 		justify-content: end;
+	}
+
+	.about-component .about-content{
+		padding-right: 5rem;
 	}
 }
 
@@ -557,9 +594,9 @@ dl {
     text-align: center;
 }
 .reusable-container h2 {
-    font-size: 1.1rem;
-    text-transform: uppercase;
-	color: #A30707;
+    font-size: 1.4rem;
+    /* text-transform: uppercase; */
+	color: #155b2e;
 	margin-bottom: .5rem;
 }
 .reusable-container h3 {
@@ -567,8 +604,9 @@ dl {
     font-size: 2rem;
 }
 .about-content-container p {
-    line-height: 33px;
-    font-size: 1rem;
+    line-height: 23px;
+    font-size: 1.3rem;
+	font-family: Sourse sans 3;
 }
 
 
@@ -578,8 +616,9 @@ dl {
 	padding: 40px;
 }
 
+
 .aplication-component {
-    background: #FFECEC;
+    background: #065A4F;
     padding-bottom: 11rem!important;
 }
 .img-container {
@@ -595,13 +634,14 @@ dl {
 }
 
 .step-content-container h5 {
-	font-size: 0.875rem;
-	color: #A30707;
+	font-size: 1.3rem;
+	color: #FFF;
 	margin-bottom: 1rem;
 }
 .step-content-container h6 {
 	font-size: 1.4rem;
 	font-weight: 600;
+	color: #FFF;
 }
 
 .one-card-container {
@@ -609,16 +649,23 @@ dl {
 }
 
 .bottom-arrow-container {
-    position: absolute;
-    bottom: -78px;
+    position: relative;
+    bottom: -12px;
     right: -7rem;
+	/* color: #A30707; */
+}
+.bottom-arrow-container img{
+	color: orangered;
 }
 
 .top-arrow-container {
-    position: absolute;
-    right: -7rem;
-    top: -70px;
+    position: relative;
+    right: -8.8rem;
+    top: -260px;
     z-index: 3;
+}
+.aplication-component{
+	height: 35rem;
 }
 .aplication-component .reusable-container {
 	margin-bottom: 8rem!important;
@@ -645,8 +692,8 @@ dl {
 }
 
 .aplication-component  .bottom-left-img-container {
-    right: 5rem;
-    bottom: 1rem;
+    right: 0rem;
+    bottom: 3rem;
 }
 
 .aplication-component  .top-left-img-container {
@@ -801,7 +848,7 @@ select-menu {
 }
 
 .testimonail-component{
-	background-color: #E7F0FF;
+	background-color: #065A4F;
 }
 
 .testimonails-content h6{
@@ -845,7 +892,7 @@ select-menu {
 .testimonails-slider.owl-carousel .owl-dots .owl-dot{
 		width: 1rem;
 		height: 1rem;
-		background-color: #FFA36F!important;
+		background-color: #F4f1EA !important;
 		border-radius: 50%;
 		margin: .2rem;
 		
@@ -872,7 +919,7 @@ select-menu {
 }
 
 .testimonails-slider.owl-carousel .owl-dot.active::after {
-    border: 1px solid #E05100;
+    border: 1px solid #F4F1EA;
 }
 
 
@@ -894,9 +941,6 @@ select-menu {
 	filter: linear-gradient(180deg, #FFA36F 0%, #80FFF4 100%);
 }
 
-.video-section{
-	background-color: rgb(221, 214, 214);
-}
 
 .video-container .item {
 	padding: 1rem 2rem!important;
@@ -908,7 +952,7 @@ select-menu {
 
 
 footer {
-	background-color: #155b2e;
+	background-color: #000;
 }
 
 .social-list-container li a {
@@ -935,13 +979,13 @@ footer {
     background-color: var(--bs-nav-tabs-link-active-bg);
     border-color: var(--bs-nav-tabs-link-active-border-color);
     border: none;
-	background-color: #40BAFF;
+	background-color: #2c473e;
 	color: #fff;
 }
 
 .nav-tabs .nav-link {
-    background-color: #DAF2FF;
-    color: #565D6F;
+    background-color: #E05100;
+    color: #ffffff;
     border-radius: 10px;
 }
 
@@ -972,7 +1016,7 @@ footer {
 }
 
 .testimonails-slider.owl-carousel .owl-dots .owl-dot.active {
-    background-color: #E05100!important;
+    background-color: #F4F1EA!important;
    
 }
 
@@ -1200,6 +1244,10 @@ footer {
 			left: 0;
 		}
 
+		.slider-img-container{
+			margin-top: -50px;
+		}
+
 		.one-stripes-container{
 			display: none;
 		}
@@ -1215,6 +1263,13 @@ footer {
 			display: none;
 		}
 
+		.about-component .about-content{
+			margin-right: orem;
+		}
+
+		.about-content .subtitle{
+			font-size: 3rem;;
+		}
 		.bg-categories h4{
 			text-align: center;
 		}
@@ -1383,7 +1438,7 @@ footer {
 		}
 
 		section.mobile-application-component.py-5 {
-			background: #ffecec;
+			background: #B0D182;
 		}
 
 		.menu  {
@@ -1467,7 +1522,7 @@ footer {
 	}
 
 	.fixed-hero-slider-component {
-		height: 58.625rem;
+		height: 43.625rem;
 		margin-top: 7rem;
 	}
 
@@ -1523,4 +1578,43 @@ footer {
 	border: 2px solid #550404;
  }
 
- 
+ /* Styling the product section */
+.card-img-container {
+    position: relative;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 50;
+    transition: opacity 0.3s ease;
+}
+
+.card-img-overlay .card-title {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.card-img-container:hover .card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-container:hover .card-img-overlay {
+    opacity: 80%;
+}
+
